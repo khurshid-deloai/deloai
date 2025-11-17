@@ -11,8 +11,8 @@ export default function Footer() {
         <div className="order-1">
           <h4 className="font-semibold mb-4">Product</h4>
           <ul className="space-y-3 text-gray-600">
-            <li><a href="#" className="hover:text-black">CareerPrep</a></li>
-            <li><a href="#" className="hover:text-black">MathQuest</a></li>
+            <li><a href="#" className="hover:text-lime-600">CareerPrep</a></li>
+            <li><a href="#" className="hover:text-lime-600">MathQuest</a></li>
           </ul>
         </div>
 
@@ -20,8 +20,8 @@ export default function Footer() {
         <div className="order-2">
           <h4 className="font-semibold mb-4">Company</h4>
           <ul className="space-y-3 text-gray-600">
-            <li><a href="#" className="hover:text-black">Why us?</a></li>
-            <li><a href="#" className="hover:text-black">About us</a></li>
+            <li><a href="#" className="hover:text-lime-600">Why us?</a></li>
+            <li><a href="#" className="hover:text-lime-600">About us</a></li>
           </ul>
         </div>
 
@@ -30,7 +30,7 @@ export default function Footer() {
           <h4 className="font-semibold mb-4">Contact</h4>
           <ul className="space-y-3 text-gray-600">
             <li>
-              <a href="mailto:contact@monotree.com" className="hover:text-black">
+              <a href="mailto:contact@monotree.com" className="hover:text-lime-600">
                 contact@deloai.com
               </a>
             </li>
@@ -43,16 +43,16 @@ export default function Footer() {
           <h4 className="font-semibold mb-4">Follow Us</h4>
 
           <div className="flex space-x-4">
-            <a href="#" className="text-gray-600 hover:text-black" aria-label="LinkedIn">
+            <a href="#" className="text-gray-600 hover:text-blue-400" aria-label="LinkedIn">
               <Linkedin className="h-6 w-6" />
             </a>
-            <a href="#" className="text-gray-600 hover:text-black" aria-label="Facebook">
+            <a href="#" className="text-gray-600 hover:text-blue-600" aria-label="Facebook">
               <Facebook className="h-6 w-6" />
             </a>
-            <a href="#" className="text-gray-600 hover:text-black" aria-label="Instagram">
+            <a href="#" className="text-gray-600 hover:text-rose-500" aria-label="Instagram">
               <Instagram className="h-6 w-6" />
             </a>
-            <a href="#" className="text-gray-600 hover:text-black" aria-label="Youtube">
+            <a href="#" className="text-gray-600 hover:text-red-500" aria-label="Youtube">
               <Youtube className="h-6 w-6" />
             </a>
           </div>

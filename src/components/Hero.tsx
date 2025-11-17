@@ -88,7 +88,7 @@ export default function HeroSection() {
 href="https://careerprep.in"
 target="_blank"
 rel="noopener noreferrer"
-className="inline-flex w-[220px] items-center justify-center gap-2 px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold text-lg shadow-lg border-2 border-gray-900 bg-white text-gray-900 hover:bg-emerald-600 hover:text-white hover:border-emerald-600 hover:shadow-xl transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
+className="inline-flex w-[220px] items-center justify-center gap-2 px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold text-lg shadow-lg border-2 border-gray-900 bg-white text-gray-900 hover:bg-lime-500 hover:text-white hover:border-lime-500 hover:shadow-xl transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
 onMouseEnter={() => setIsHovering(true)}
 onMouseLeave={() => setIsHovering(false)}
 onFocus={handleFocus}
