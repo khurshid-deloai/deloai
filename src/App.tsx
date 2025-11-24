@@ -8,6 +8,7 @@ import HeroSection from './components/Hero';
 import ServiceCard from './components/Cards/ServiceCard';
 import planImage from './assets/servicecards/plan.png';
 import ProductHighlights from './components/Product';
+import ServiceSection from './components/Services';
 function App() {
   return (    
   <div>
@@ -16,16 +17,9 @@ function App() {
      <div className='mt-10'>
        <HeroSection />
      </div>
-     <div className='ml-20'>
-        <ServiceCard
-       label='Plan'
-        image={planImage}
-        title="Web Development"
-        description="High‑quality responsive websites built with modern tools."/>
-      </div>
+     <ServiceSection/>
       <ProductHighlights />
       <WhyChooseUs />
-           <WhyChooseUs />
 
       <Contact />
       <Footer/>
