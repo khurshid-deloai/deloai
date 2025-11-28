@@ -1,28 +1,16 @@
 import React, { useState } from "react";
-import {
-  ChevronDown,
-  Menu,
-  X,
-  MessageSquare,
-  BookOpen,
-  Calendar,
-  Heart,
-} from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Logo from "../assets/logo.png";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [productOpen, setProductOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 py-4 bg-transparent">
       <div className="px-4 md:px-8 lg:px-12">
-        <div 
-          className="bg-white rounded-2xl shadow-sm overflow-hidden"
-          onMouseLeave={() => setProductOpen(false)}
-        >
+        <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
           {/* Main Navbar */}
-          <div className="px-[10%] py-4 flex items-center justify-between">
+          <div className="px-[12.5%] py-4 flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center gap-3">
               <img src={Logo} alt="Logo" className="h-7 w-auto" />
@@ -30,18 +18,18 @@ export default function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-10 text-black relative">
-              {/* Product */}
-              <div
-                className="flex items-center gap-1 cursor-pointer hover:text-gray-700 transition"
-                onMouseEnter={() => setProductOpen(true)}
-              >
-                Product <ChevronDown size={18} />
-              </div>
-
-              <a href="#" className="hover:text-gray-600 transition">Why us?</a>
-              <a href="#" className="hover:text-gray-600 transition">Cases</a>
-              <a href="#" className="hover:text-gray-600 transition">About us</a>
-              <a href="#" className="hover:text-gray-600 transition">Blog</a>
+              <a href="#services" className="hover:text-gray-600 transition">
+                Services
+              </a>
+              <a href="#why-us" className="hover:text-gray-600 transition">
+                Why Us?
+              </a>
+              <a href="#portfolio" className="hover:text-gray-600 transition">
+                Portfolio
+              </a>
+              <a href="#contact" className="hover:text-gray-600 transition">
+                Contact
+              </a>
             </nav>
 
             {/* Right Side */}
@@ -52,72 +40,13 @@ export default function Header() {
             </div>
 
             {/* Mobile menu icon */}
-            <button onClick={() => setMobileOpen(true)} className="md:hidden text-black">
+            <button
+              onClick={() => setMobileOpen(true)}
+              className="md:hidden text-black"
+            >
               <Menu size={28} />
             </button>
           </div>
-
-          {/* Dropdown Extension */}
-          {productOpen && (
-            <div className="border-t border-gray-200 px-12 py-10 bg-white/90 backdrop-blur-md">
-              <div className="mb-8 pb-4 border-b border-gray-100">
-                <a href="/features" className="text-black font-medium">
-                  Product <span className="ml-3 text-sm text-gray-500 hover:text-lime-600 transition font-normal">All features &rarr;</span>
-                </a>
-              </div>
-              <div className="grid grid-cols-4 gap-10">
-                {/* Column 1 */}
-                <div>
-                  <div className="flex items-center gap-3 mb-4">
-                    <MessageSquare className="w-5 h-5 text-gray-600" />
-                    <h4 className="text-base font-semibold text-black">Communication & Collaboration</h4>
-                  </div>
-                  <ul className="text-gray-600 space-y-3">
-                    <li>
-                      Seamless Communication between Students, Teachers and Parents.
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Column 2 */}
-                <div>
-                  <div className="flex items-center gap-3 mb-4">
-                    <BookOpen className="w-5 h-5 text-gray-600" />
-                    <h4 className="text-base font-semibold text-black">Onboarding, Learning & Training</h4>
-                  </div>
-                  <ul className="text-gray-600 space-y-3">
-                    <li>
-                      A structured, intuitive learning experience.
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Column 3 */}
-                <div>
-                  <div className="flex items-center gap-3 mb-4">
-                    <Calendar className="w-5 h-5 text-gray-600" />
-                    <h4 className="text-base font-semibold text-black">Student Engagement & Growth</h4>
-                  </div>
-                  <ul className="text-gray-600 space-y-3">
-                    <li>Track academic progress, participate in fun challenges like MathQuest, and stay motivated throughout the year.</li>
-                  </ul>
-                </div>
-
-                {/* Column 4 */}
-                <div>
-                  <div className="flex items-center gap-3 mb-4">
-                    <Heart className="w-5 h-5 text-gray-600" />
-                    <h4 className="text-base font-semibold text-black">Daily Operations & School Workflow</h4>
-                  </div>
-                  <ul className="text-gray-600 space-y-3">
-                    <li>
-                      Simplify everyday tasks with digital tools for event management, communication, announcements, and more.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          )}
         </div>
       </div>
 
@@ -133,13 +62,18 @@ export default function Header() {
             </button>
 
             <div className="flex flex-col gap-4 text-lg">
-              <div className="flex items-center gap-1">
-                Product <ChevronDown size={18} />
-              </div>
-              <a href="#">Why us?</a>
-              <a href="#">Cases</a>
-              <a href="#">About us</a>
-              <a href="#">Blog</a>
+              <a href="#services" onClick={() => setMobileOpen(false)}>
+                Services
+              </a>
+              <a href="#why-us" onClick={() => setMobileOpen(false)}>
+                Why Us?
+              </a>
+              <a href="#portfolio" onClick={() => setMobileOpen(false)}>
+                Portfolio
+              </a>
+              <a href="#contact" onClick={() => setMobileOpen(false)}>
+                Contact
+              </a>
             </div>
 
             <button className="mt-6 bg-lime-400 hover:bg-lime-300 font-medium px-6 py-3 rounded-xl shadow-md transition">
