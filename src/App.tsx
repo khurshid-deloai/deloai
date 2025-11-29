@@ -1,48 +1,67 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Header from "./components/Header";
 import HeroSection from "./components/Hero";
 import ServiceSection from "./components/Services";
 import WhyChooseUs from "./components/WhyChooseUs";
-import Portfolio from "./components/Projects";
 import OurClientsSection from "./OurClientsSection";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Policy from "./pages/Policy"; // Privacy Policy page
 
 function App() {
   return (
-    <div>
-      <Header />
+    <BrowserRouter>
+      <div className="min-h-screen flex flex-col">
+        {/* Header on all pages */}
+        <Header />
 
-      {/* Hero */}
-      <div className="mt-10">
-        <HeroSection />
+        {/* Main content */}
+        <main className="flex-1">
+          <Routes>
+            {/* Main Website Route */}
+            <Route
+              path="/"
+              element={
+                <div>
+                  {/* Hero */}
+                  <div className="mt-10">
+                    <HeroSection />
+                  </div>
+
+                  {/* Services */}
+                  <section id="services">
+                    <ServiceSection />
+                  </section>
+
+                  {/* Why Us */}
+                  <section id="why-us">
+                    <WhyChooseUs />
+                  </section>
+
+                  {/* Portfolio */}
+                  <section id="portfolio">
+                    <OurClientsSection />
+                  </section>
+
+                  {/* Contact */}
+                  <section id="contact">
+                    <Contact />
+                  </section>
+                </div>
+              }
+            />
+
+            {/* Privacy Policy Route */}
+            <Route path="/privacy-policy" element={<Policy />} />
+          </Routes>
+        </main>
+
+        {/* Footer on all pages */}
+        <Footer />
       </div>
-
-      {/* Services section (for #services) */}
-      <section id="services">
-        <ServiceSection />
-      </section>
-
-      {/* Why Us? section (for #why-us) */}
-      <section id="why-us">
-        <WhyChooseUs />
-      </section>
-
-      {/* Portfolio section (for #portfolio) */}
-      <section id="portfolio">
-        <OurClientsSection />
-      </section>
-
-      {/* Extra section you already had */}
-      <OurClientsSection />
-
-      {/* Contact section (for #contact) */}
-      <section id="contact">
-        <Contact />
-      </section>
-
-      <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

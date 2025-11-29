@@ -36,7 +36,7 @@ export default function Contact() {
             onClick={() => setOpen(true)}
             className="mt-10 bg-lime-400 hover:bg-lime-300 text-black font-medium px-8 py-3 rounded-lg shadow-md transition"
           >
-            Get Started
+            Connect Now
           </button>
 
           {/* Mobile-only space + bottom images */}
@@ -114,7 +114,7 @@ export default function Contact() {
                   type="submit"
                   className="bg-lime-400 hover:bg-lime-500 transition text-white font-medium py-3 rounded-xl mt-2"
                 >
-                  Submit
+                  Send a Message
                 </button>
 
                 <p className="text-xs text-gray-400 text-center mt-2">

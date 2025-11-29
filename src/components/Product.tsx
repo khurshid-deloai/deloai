@@ -33,7 +33,7 @@ export default function ProductHighlights() {
   const currentProduct = products[activeProduct];
 
   return (
-    <section className="w-full py-24 bg-white">
+    <section className="w-full  py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
         {/* LEFT CONTENT */}
         <div>

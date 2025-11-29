@@ -27,16 +27,14 @@ export default function Header() {
               <a href="#portfolio" className="hover:text-gray-600 transition">
                 Portfolio
               </a>
-              <a href="#contact" className="hover:text-gray-600 transition">
-                Contact
-              </a>
             </nav>
 
             {/* Right Side */}
             <div className="hidden md:flex items-center gap-6">
-              <button className="bg-lime-400 hover:bg-lime-300 font-medium px-6 py-2 rounded-xl transition">
-                Get Started
+              <a href="#contact"><button className="bg-lime-400 hover:bg-lime-300 font-medium px-6 py-2 rounded-xl transition">
+                Contact Us
               </button>
+              </a>
             </div>
 
             {/* Mobile menu icon */}
@@ -76,9 +74,10 @@ export default function Header() {
               </a>
             </div>
 
-            <button className="mt-6 bg-lime-400 hover:bg-lime-300 font-medium px-6 py-3 rounded-xl shadow-md transition">
-              Get Started
+            <a href="#contact"><button className="mt-6 bg-lime-400 hover:bg-lime-300 font-medium px-6 py-3 rounded-xl shadow-md transition">
+              Contact Us
             </button>
+            </a>
           </div>
         </div>
       )}

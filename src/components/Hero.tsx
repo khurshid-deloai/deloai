@@ -70,18 +70,14 @@ export default function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button
-                type="button"
-                onClick={() => {
-                  // Replace this with real navigation logic in your app
-                  console.log('Navigate to Services');
-                }}
+              <a href="#services"><button
                 className="group px-6 sm:px-8 py-3 sm:py-4 bg-gray-900 text-white rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl hover:bg-gray-800 transition-all duration-300 flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                 aria-label="View our services"
               >
                 Our Services
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
+              </a>
 
               {/* Use an anchor for external link (better semantics for new tab + rel) */}
       <a
