@@ -20,7 +20,7 @@ export default function Footer() {
 
           {/* Social Icons */}
           <div className="flex space-x-5">
-            <a href="#" className="text-gray-600 hover:text-blue-400" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/company/deloai-private-limited/" className="text-gray-600 hover:text-blue-400" aria-label="LinkedIn">
               <Linkedin className="h-6 w-6" />
             </a>
 
@@ -28,11 +28,11 @@ export default function Footer() {
               <Facebook className="h-6 w-6" />
             </a> */}
 
-            <a href="#" className="text-gray-600 hover:text-rose-500" aria-label="Instagram">
+            <a href="https://www.instagram.com/delo_ai/" className="text-gray-600 hover:text-rose-500" aria-label="Instagram">
               <Instagram className="h-6 w-6" />
             </a>
 
-            <a href="#" className="text-gray-600 hover:text-red-500" aria-label="Youtube">
+            <a href="https://www.youtube.com/@delo_ai" className="text-gray-600 hover:text-red-500" aria-label="Youtube">
               <Youtube className="h-6 w-6" />
             </a>
           </div>
@@ -49,7 +49,7 @@ export default function Footer() {
 
             <div className="flex items-center space-x-2 md:justify-end">
               <Phone className="h-4 w-4 text-lime-600" />
-              <p>+91ģit9945618018</p>
+              <p>+919945618018</p>
             </div>
 
           </div>
