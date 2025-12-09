@@ -1,68 +1,69 @@
+import { Shield, TrendingUp, Activity } from 'lucide-react';
+import HeroImage from '../assets/hero4.svg';
 
-
-import { ArrowRight } from 'lucide-react'
-import cp from '../assets/cp.png'
-
-export default function CareerPrepSection() {
+function HeroSection() {
   return (
-    <section className="bg-[#F9F5F2] h-screen flex items-center py-10 px-6">
-      <div className="max-w-7xl px-6 lg:px-12 mx-auto w-full">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          
-          {/* Right (now swapped to left) */}
-          <div className="space-y-6">
-            <div className="space-y-2">
-              <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide">
-                Latest Release
-              </p>
-              <h1 className="text-4xl font-bold text-gray-900 leading-tight">
-                CareerPrep: Professional Growth Redefined
+    <section className="min-h-screen flex items-center" aria-label="Hero section">
+      <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          {/* Left Content */}
+          <div className="space-y-12">
+            <div className="space-y-6">
+              <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
+                Put{' '}
+                <span className="relative inline-block">
+                  performance
+                  <span className="absolute bottom-2 left-0 w-full h-3 bg-blue-200 -z-10"></span>
+                </span>{' '}
+                first
               </h1>
+
+              <p className="text-lg lg:text-xl text-gray-600 leading-relaxed max-w-2xl">
+                Fast, scalable and intuitive — transform IT operations into automation,
+                insight and innovation, and streamline your workflows with your own platform.
+              </p>
+
+              <div className="flex items-center gap-3 pt-2">
+                <div className="flex items-center gap-2 px-4 py-2 bg-slate-900 text-white rounded-full text-sm font-medium">
+                  <Shield className="w-4 h-4" />
+                  Enterprise-ready architecture
+                </div>
+              </div>
+
+              <p className="text-sm text-gray-500">
+                Verified for uptime, security and resilience
+              </p>
             </div>
 
-            <p className="text-base text-gray-700 leading-relaxed">
-              CareerPrep is a comprehensive career-readiness platform engineered for engineering students and academic institutions. It integrates structured learning, interview preparation, profile optimization, and placement strategy into a unified ecosystem.
-            </p>
+            {/* Metrics */}
+            <div className="grid sm:grid-cols-2 gap-8 pt-6">
+              <div className="space-y-2">
+                <div className="text-5xl lg:text-6xl font-bold text-gray-900">74%</div>
+                <div className="text-base text-gray-600 font-medium">faster workflow execution</div>
+                <div className="text-sm text-gray-500">Average operational acceleration</div>
+              </div>
 
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li className="flex items-start gap-3">
-                <span className="text-blue-600 font-bold mt-0.5">✓</span>
-                <span>Structured curriculum designed by industry experts</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-blue-600 font-bold mt-0.5">✓</span>
-                <span>Real-world interview practice and feedback</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-blue-600 font-bold mt-0.5">✓</span>
-                <span>Scalable for individual and institutional adoption</span>
-              </li>
-            </ul>
-
-            <div className="pt-2">
-              <a
-                href="#"
-                className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold text-base hover:bg-blue-700 transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
-              >
-                Explore CareerPrep
-                <ArrowRight className="w-4 h-4" />
-              </a>
-            </div>
-          </div>
-
-          {/* Left (now swapped to right) */}
-          <div className="relative flex justify-center">
-            <div className="h-[90vh] w-auto rounded-2xl overflow-hidden shadow-lg">
-              <img
-                src={cp}
-                alt="CareerPrep platform interface"
-                className="h-full w-auto object-contain mx-auto"
-              />
+              <div className="space-y-2">
+                <div className="text-5xl lg:text-6xl font-bold text-gray-900">90%</div>
+                <div className="text-base text-gray-600 font-medium">clearer decision-making</div>
+                <div className="text-sm text-gray-500">Insight-driven outcomes within 30 days</div>
+              </div>
             </div>
           </div>
 
+          {/* Right Visual Elements */}
+         <div className="animate-fade-in-delay flex justify-center lg:justify-end pt-12 lg:pt-0">
+            <img
+              src={HeroImage}
+              alt="Illustration showing product workflow and collaboration"
+              className="w-full max-w-md lg:max-w-lg object-cover"
+            
+            />
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
+
+export default HeroSection;

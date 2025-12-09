@@ -2,7 +2,7 @@
 import React from "react";
 
 // Use your own image files here (webp/jpg/png etc.)
-import ChristianPhoto from "../../assets/team/4.jpeg";
+import Manjunath  from "../../assets/team/5.jpg";
 import Harshitha from "../../assets/team/4.jpeg";
 import KristianPhoto from "../../assets/team/3.jpeg";
 import Khurshid from "../../assets/team/1.jpeg";
@@ -18,7 +18,7 @@ const teamMembers: TeamMember[] = [
   {
     name: "Christian Rishøj",
     role: "Sys-Ops",
-    image: ChristianPhoto,
+    image: Manjunath,
   },
   {
     name: "Harshitha K",

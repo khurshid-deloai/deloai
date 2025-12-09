@@ -4,29 +4,29 @@ import Jeet from "../../assets/founders/jityendradeep.png";
 
 export default function FounderSection() {
   return (
-    <section className="bg-[#0A0C12] text-white py-24 px-6 md:px-10 lg:px-28">
-      <div className="max-w-[80%] mx-auto grid lg:grid-cols-2 gap-16 items-center">
+    <section className="bg-[#0A0C12] text-white py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-10 xl:px-28">
+      <div className="mx-auto w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* Left Text Content */}
-        <div>
-          <h2 className="text-3xl md:text-3xl font-semibold leading-tight max-w-xl">
+        <div className="text-center lg:text-left">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight lg:max-w-xl">
             We're building the next generation of employee apps
           </h2>
 
-          <p className="mt-8 text-lg text-gray-300 max-w-lg">
+          <p className="mt-6 sm:mt-8 text-base sm:text-lg text-gray-300 max-w-xl mx-auto lg:mx-0">
             Founded in 2019 and based in Copenhagen, Monotree is a 100% founder-owned
             company known for its commitment to customers and product excellence.
           </p>
 
-          <p className="mt-4 text-lg text-gray-300 max-w-lg">
+          <p className="mt-4 text-base sm:text-lg text-gray-300 max-w-xl mx-auto lg:mx-0">
             The existing products in this category were either very poorly built or lacked
             the mindset of genuinely putting people first. We wanted to change that — and
             we did.
           </p>
         </div>
 
-        {/* Right founder area – based on the snippet you shared */}
-        <div className="col-span-1 flex justify-center mt-12 md:mt-0 lg:justify-end">
-          <ul className="flex gap-6 md:gap-10">
+        {/* Right founder area */}
+        <div className="col-span-1 flex justify-center lg:justify-end">
+          <ul className="flex flex-col items-center gap-10 sm:gap-12 md:flex-row md:items-start">
             {/* Founder 1 */}
             <li className="relative">
               {/* Top SVG decoration */}
@@ -44,25 +44,21 @@ export default function FounderSection() {
                 />
               </svg>
 
-              <figure className="-rotate-3 md:-rotate-6 relative z-20">
-                <div className="relative w-36 h-48 lg:w-60 lg:h-80 isolate z-20 before:absolute before:inset-0 before:bg-gray-100/10 before:-rotate-6 before:rounded-2xl before:-z-10 before:-ml-4 before:mr-4 after:absolute after:inset-0 after:border after:border-gray-100/5 after:bg-gray-900/10 after:rounded-2xl">
+              <figure className="-rotate-1 sm:-rotate-2 md:-rotate-4 relative z-20">
+                <div className="relative w-32 h-40 sm:w-40 sm:h-52 md:w-44 md:h-60 lg:w-56 lg:h-72 xl:w-60 xl:h-80 isolate z-20 before:absolute before:inset-0 before:bg-gray-100/10 before:-rotate-6 before:rounded-2xl before:-z-10 before:-ml-3 sm:before:-ml-4 before:mr-3 sm:before:mr-4 after:absolute after:inset-0 after:border after:border-gray-100/5 after:bg-gray-900/10 after:rounded-2xl">
                   <div className="w-full h-full rounded-2xl bg-lime-400">
                     <img
-                    src={Lokesh}
-                    alt="Lokesh E"
-                    className="w-full h-full rounded-2xl shadow-lg select-none object-cover grayscale"
-                    draggable="false"
-                    loading="lazy"
-                  />
+                      src={Lokesh}
+                      alt="Lokesh E"
+                      className="w-full h-full rounded-2xl shadow-lg select-none object-cover"
+                      draggable="false"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
-                <figcaption className="mt-5">
-                  <p className="text-sm md:text-base text-gray-100">
-                    Lokesh E
-                  </p>
-                  <p className="text-xs md:text-sm text-gray-500">
-                    Co-Founder, CEO
-                  </p>
+                <figcaption className="mt-4 sm:mt-5 text-center md:text-left">
+                  <p className="text-sm sm:text-base text-gray-100">Lokesh E</p>
+                  <p className="text-xs sm:text-sm text-gray-500">Co-Founder, CEO</p>
                 </figcaption>
               </figure>
             </li>
@@ -84,25 +80,21 @@ export default function FounderSection() {
                 />
               </svg>
 
-              <figure className="rotate-2 md:rotate-3 md:mt-16 md:-ml-3 relative z-10">
-                <div className="relative w-36 h-48 lg:w-60 lg:h-80 isolate before:absolute before:inset-0 before:bg-gray-100/10 before:rotate-6 before:rounded-2xl before:-z-10 after:absolute after:inset-0 after:border after:border-gray-100/5 after:bg-gray-900/10 after:rounded-2xl">
+              <figure className="rotate-1 sm:rotate-2 md:rotate-3 md:mt-10 md:-ml-2 lg:mt-16 lg:-ml-3 relative z-10">
+                <div className="relative w-32 h-40 sm:w-40 sm:h-52 md:w-44 md:h-60 lg:w-56 lg:h-72 xl:w-60 xl:h-80 isolate before:absolute before:inset-0 before:bg-gray-100/10 before:rotate-6 before:rounded-2xl before:-z-10 after:absolute after:inset-0 after:border after:border-gray-100/5 after:bg-gray-900/10 after:rounded-2xl">
                   <div className="w-full h-full rounded-2xl bg-lime-400">
                     <img
-                    src={Jeet}
-                    alt="Jitendriyadeep"
-                    className="w-full h-full rounded-2xl select-none object-cover grayscale"
-                    draggable="false"
-                    loading="lazy"
-                  />
+                      src={Jeet}
+                      alt="Jitendriyadeep"
+                      className="w-full h-full rounded-2xl select-none object-cover"
+                      draggable="false"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
-                <figcaption className="mt-5">
-                  <p className="text-sm md:text-base text-gray-100">
-                    Jitendriyadeep
-                  </p>
-                  <p className="text-xs md:text-sm text-gray-500">
-                    Co-Founder, CTO
-                  </p>
+                <figcaption className="mt-4 sm:mt-5 text-center md:text-left">
+                  <p className="text-sm sm:text-base text-gray-100">Jitendriyadeep</p>
+                  <p className="text-xs sm:text-sm text-gray-500">Co-Founder, CTO</p>
                 </figcaption>
               </figure>
             </li>

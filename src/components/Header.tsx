@@ -10,9 +10,9 @@ export default function Header() {
         <div className="pointer-events-none absolute inset-x-0 top-0 h-4 bg-white/30 backdrop-blur-lg supports-[backdrop-filter]:bg-white/30" />
 
       <div className="px-4 md:px-8 lg:px-12">
-        <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
+        <div className="bg-white rounded-2xl  overflow-hidden">
           {/* Main Navbar */}
-          <div className="px-[12.5%] py-4 flex items-center justify-between">
+          <div className="px-[2.5%] py-4 flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center gap-3">
               <img src={Logo} alt="Logo" className="h-7 w-auto" />
