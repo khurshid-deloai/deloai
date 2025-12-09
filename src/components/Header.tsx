@@ -8,10 +8,10 @@ export default function Header() {
   return (
 <header className="fixed top-0 left-0 w-full z-50 py-4 ">
 
-      <div className="px-4 md:px-8 lg:px-12">
+      <div className="px-8 md:px-8 lg:px-12">
         <div className="bg-white rounded-2xl  overflow-hidden">
           {/* Main Navbar */}
-          <div className="px-[12.5%] py-4 flex items-center justify-between">
+          <div className="px-[10%] py-4 flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center gap-3">
               <img src={Logo} alt="Logo" className="h-7 w-auto" />

@@ -10,7 +10,7 @@ import OurClientsSection from "./OurClientsSection";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Policy from "./pages/Policy"; // Privacy Policy page
-import GalleryPage from "./components/MathQuest/Gallery/GAllery";
+import GalleryPage from "./components/MathQuest/Gallery/Gallery";
 import AboutHero from "./components/about/Hero";
 import About from "./pages/About";
 
