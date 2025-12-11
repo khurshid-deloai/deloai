@@ -5,7 +5,7 @@ import Jeet from "../../assets/founders/jityendradeep.png";
 export default function FounderSection() {
   return (
     <section className="bg-[#0A0C12] text-white py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-10 xl:px-28">
-      <div className="mx-auto w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="mx-auto w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* Left Text Content */}
         <div className="text-center lg:text-left">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight lg:max-w-xl">
@@ -26,7 +26,7 @@ export default function FounderSection() {
 
         {/* Right founder area */}
         <div className="col-span-1 flex justify-center lg:justify-end">
-          <ul className="flex flex-col items-center gap-10 sm:gap-12 md:flex-row md:items-start">
+          <ul className="flex flex-row items-center gap-10 sm:gap-12 md:flex-row md:items-start">
             {/* Founder 1 */}
             <li className="relative">
               {/* Top SVG decoration */}

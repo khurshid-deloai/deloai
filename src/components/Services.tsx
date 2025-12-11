@@ -120,7 +120,7 @@ export default function ServiceSection() {
   return (
     <section
       id="services"
-      className="relative py-20 md:py-28 border-t border-gray-200 bg-gray-50"
+      className="relative py-20 md:py-28 border-t border-gray-200 bg-white"
     >
       {/* Header – similar to Product Highlights */}
       <header className="mb-10 lg:mb-16 px-4 max-w-7xl mx-auto flex items-center justify-between gap-4">
