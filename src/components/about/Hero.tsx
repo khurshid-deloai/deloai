@@ -1,4 +1,5 @@
-import Hero from "../../assets/hero-about.svg";
+import Hero from "../../assets/hero-about2.svg";
+import Hero1 from "../../assets/deloai_hero_img.svg";
 
 export default function AboutHero() {
   return (
@@ -40,7 +41,7 @@ export default function AboutHero() {
         {/* Right Image (External SVG) */}
         <div className="flex justify-center items-center">
           <img
-            src={Hero}  // <-- change this path
+            src={Hero1}  // <-- change this path
             alt="Illustration"
             className="w-full max-w-md"
           />

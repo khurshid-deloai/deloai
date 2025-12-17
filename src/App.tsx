@@ -13,7 +13,8 @@ import Policy from "./pages/Policy"; // Privacy Policy page
 import GalleryPage from "./components/MathQuest/Gallery/Gallery";
 import AboutHero from "./components/about/Hero";
 import About from "./pages/About";
-
+import SaaSPrinciplesBlog from "./components/Blogs/Blog4";
+import EmployeeBlog from "./components/Blogs/EmployeeBlog";
 function App() {
   return (
     <BrowserRouter>
@@ -65,6 +66,8 @@ function App() {
                         <Route path="/mathquest/2024-25/gallery" element={<GalleryPage/>} />
 
             <Route path="/about" element={<About />} />
+                     <Route path="/blogs" element={<EmployeeBlog />} />
+                      <Route path="/blogs/saas-principles" element={<SaaSPrinciplesBlog />} />  
           </Routes>
         </main>
 
