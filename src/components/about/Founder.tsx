@@ -1,6 +1,6 @@
 import React from "react";
-import Lokesh from "../../assets/founders/lokesh.png";
-import Jeet from "../../assets/founders/jityendradeep.png";
+import Lokesh from "../../assets/founders/Lokesh.webp";
+import Jeet from "../../assets/founders/Jitiyendradeep.webp";
 
 export default function FounderSection() {
   return (
